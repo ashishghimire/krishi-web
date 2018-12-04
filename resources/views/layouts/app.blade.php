@@ -65,10 +65,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{{asset('js/tinymce/tinymce.min.js')}}"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navb  ar-static-top">
         <div class="container">
             <div class="navbar-header">
 
@@ -101,9 +103,9 @@
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
                         {{--<li class="nav-item">--}}
-                            {{--@if (Route::has('register'))--}}
-                                {{--<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>--}}
-                            {{--@endif--}}
+                        {{--@if (Route::has('register'))--}}
+                        {{--<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>--}}
+                        {{--@endif--}}
                         {{--</li>--}}
                     @else
                         <li class="nav-item dropdown">
@@ -141,6 +143,7 @@
     </div>
     @yield('content')
 </div>
+<script src="{{asset('js/scripts.js')}}"></script>
 <!-- Scripts -->
 </body>
 </html>

@@ -24,7 +24,7 @@
                                 <li class="list-group-item">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <span>{{$question->question}}</span>
+                                            <span>{!! $question->question !!}</span>
                                             <a href="{{route('question.edit', $question)}}"
                                                class="glyphicon glyphicon-edit"
                                                style="text-decoration: none;"></a>
@@ -36,26 +36,26 @@
 
                                         </div>
                                     </div>
-                                    @if(!empty($question->hint))<div class="col-md-12"><p class="small">Hint: {{$question->hint}}</p></div> @endif
+                                    @if(!empty($question->hint))<div class="col-md-12"><p class="small">Hint: {!! $question->hint !!}</p></div> @endif
                                     <div class="row">
                                         <div class="col-md-6">
 
                                     <span
-                                        style="color:{{$question->answer=='a'? 'green' : 'red'}}">{{$question->a}}</span>
+                                        style="color:{{$question->answer=='a'? 'green' : 'red'}}">{!! $question->a!!}</span>
                                         </div>
                                         <div class="col-md-6">
                                     <span
-                                        style="color:{{$question->answer=='b'? 'green' : 'red'}}">{{$question->b}}</span>
+                                        style="color:{{$question->answer=='b'? 'green' : 'red'}}">{!!  $question->b !!}</span>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                     <span
-                                        style="color:{{$question->answer=='c'? 'green' : 'red'}}">{{$question->c}}</span>
+                                        style="color:{{$question->answer=='c'? 'green' : 'red'}}">{!! $question->c !!}</span>
                                         </div>
                                         <div class="col-md-6">
                                     <span
-                                        style="color:{{$question->answer=='d'? 'green' : 'red'}}">{{$question->d}}</span>
+                                        style="color:{{$question->answer=='d'? 'green' : 'red'}}">{!! $question->d !!}</span>
                                         </div>
                                     </div>
                                 </li>

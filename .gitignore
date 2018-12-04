@@ -1,6 +1,8 @@
 /node_modules
 /public/hot
 /public/storage
+/public/js/tinymce/plugins/tiny_mce_wiris/cache/*
+/public/js/tinymce/plugins/tiny_mce_wiris/formulas/*
 /storage/*.key
 /vendor
 /.idea
